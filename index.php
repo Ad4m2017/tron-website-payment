@@ -12,6 +12,6 @@ $response = file_get_contents('https://api.tronscan.org/api/account/TGxyQ8Z9xK57
 
 echo $response;
 
-var_dump($response);
+//var_dump($response);
 
 ?>

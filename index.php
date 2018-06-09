@@ -1,8 +1,6 @@
 <?php
 /* index.php */
 
-echo "Hello Tron World!"
-
-ech;
+echo "Hello Tron World!";
 
 ?>

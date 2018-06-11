@@ -4,4 +4,7 @@ Tron Website Payment (PHP + Javascript)
 Simple Tron (TRX) Payment Script for Websites.
 
 Have fun!
-4dam2017
+
+Ad4m2017
+
+https://t.me/Ad4m2017

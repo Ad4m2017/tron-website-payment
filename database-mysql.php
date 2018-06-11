@@ -1,7 +1,6 @@
 <?php
-/*
-    all output's in json format
-*/
+
+/*	prepare json output	*/
 function json_output( $status, $message, $array = array() )
 {
 	$json->status = $status;
@@ -22,4 +21,5 @@ if ( mysqli_connect_errno() )
 	$message	= "Failed to connect to MySQL: " . mysqli_connect_error();
 	return json_output( $status, $message );    
 }
+
 ?>

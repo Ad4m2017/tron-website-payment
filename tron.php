@@ -1,19 +1,16 @@
 <?php
-/*index.php*/
+/*
+tron function's
+*/
 
-/* show all error/notice */
-//error_reporting(E_ALL);
-//ini_set('display_errors', 1);
+$tron_api_server_url = 'https://api.tronscan.org/api';
 
-
-echo "Hello Tron World!";
-
-$response = file_get_contents('https://api.tronscan.org/api/account/TGxyQ8Z9xK57HDPZe1LWbBXAuQfT92xS5Y');
-
-echo $response;
-
-//var_dump($response);
-
-echo "Hello Tron World!";
+/* get all information about a tron address */
+function get_account_information( $address )
+{
+	$result = file_get_contents( $tron_api_server_url . '/account/' . $address );
+	
+	return $result;
+}
 
 ?>

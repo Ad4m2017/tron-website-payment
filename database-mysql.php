@@ -3,11 +3,11 @@
 /*	prepare json output	*/
 function json_output( $status, $message, $array = array() )
 {
-	$json->status = $status;
-	$json->message = $message;
-	$json->array = $array;
+	$json->status 	= $status;
+	$json->message 	= $message;
+	$json->array 	= $array;
+	$json 			= json_encode($json);
 	
-	$json = json_encode($json);
 	return $json;
 }
 

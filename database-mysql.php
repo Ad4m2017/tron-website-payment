@@ -1,25 +1,25 @@
 <?php
 /*
-    database-mysql.php return only in json format
+    all output's in json format
 */
+function json_output( $status, $message, $array = array() )
+{
+	$json->status = $status;
+	$json->message = $message;
+	$json->array = $array;
+	
+	$json = json_encode($json);
+	return $json;
+}
 
-
-$json->status = "0";
-$json->text = "";
-
-$json = json_encode($json);
-
-echo $json;
-
-
+/*	connect to database	*/
 $db = mysqli_connect("localhost","root","","db_tron_pay");
 
-/*
-    Check connection
-*/
+/*	Check connection	*/
 if ( mysqli_connect_errno() )
 {
-    echo "Failed to connect to MySQL: " . mysqli_connect_error();
-    
+    $status		= "error";
+	$message	= "Failed to connect to MySQL: " . mysqli_connect_error();
+	return json_output( $status, $message );    
 }
 ?>

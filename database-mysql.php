@@ -1,7 +1,16 @@
 <?php
 /*
-    all queryoutput in json for
+    database-mysql.php return only in json format
 */
+
+
+$json->status = "0";
+$json->text = "";
+
+$json = json_encode($json);
+
+echo $json;
+
 
 $db = mysqli_connect("localhost","root","","db_tron_pay");
 

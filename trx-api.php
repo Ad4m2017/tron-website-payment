@@ -11,9 +11,10 @@ $api_url = 'https://api.tronscan.org/api';
 */
 function get_account_information( $address )
 {
-	$result = file_get_contents( $api_url . '/account/' . $address );
+	$result = file_get_contents( @$api_url . '/account/' . $address );
 	
 	return $result;
 }
 
+echo get_account_information("");
 ?>

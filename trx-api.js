@@ -38,5 +38,5 @@ $( document ).ready(function() {
 	$("#trx-copy-button").click(function(){
 		$("#trx-address").select();
 		document.execCommand('copy');
-	});				
+	});
 });

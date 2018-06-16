@@ -4,17 +4,25 @@
     Contact: https://t.me/Ad4m2017
 */
 
+$q = @$_REQUEST['q'];
+
 $api_url = 'https://api.tronscan.org/api';
 
-/* 
-    get all information about a single tron address
-*/
-function get_account_information( $address )
+function run_api( $data )
 {
-	$result = file_get_contents( @$api_url . '/account/' . $address );
-	
-	return $result;
+	$content = @file_get_contents( $GLOBALS['api_url'] . $data );
+	return $content;
 }
 
-echo get_account_information("");
+function balance( $address )
+{
+	$balance = null;
+	$content = run_api( '/account/' . $address );
+	$json = json_decode( $content, true );
+	if ( $json['balances'][0]['name'] == "TRX" ) { $balance = $json['balances'][0]['balance']; }
+	return $balance;
+}
+
+echo balance("THSWRh5wW2MbpdZ3B5ajYedYaUDQhGQYej");
+
 ?>

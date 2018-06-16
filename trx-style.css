@@ -1,0 +1,47 @@
+/*
+    Tron (TRX) API CSS by Ad4m2017
+    Contact: https://t.me/Ad4m2017
+*/
+
+#main { margin:30px auto; width:250px; border:1px solid #f1f1f1; padding:15px; text-align:center; }
+#trx-logo { margin-bottom:15px; }
+#trx-logo-text { display:inline-block; font-size:28px; margin-left:5px; }
+#trx-img { height: 24px; }
+#trx-button {
+	background-color: #4CAF50;
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	cursor:pointer;
+}
+#trx-qrcode{
+	margin-top:15px;
+}
+#trx-copy-button {
+	margin:5px;
+}
+#trx-address {
+	font-family: monospace;
+	word-wrap: break-word;
+	width: 100%;
+	display: inline-block;
+	font-size: 12px;
+	height: auto;
+	line-height: 14px;
+	margin: 6px 0;
+	border: none;
+	overflow: auto;
+	outline: none;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+	text-align: center;
+	resize: none;
+	background: transparent;
+	font-weight: bold;
+}
+

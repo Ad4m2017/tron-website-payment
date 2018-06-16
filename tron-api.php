@@ -1,7 +1,7 @@
 <?php
 /*
-    Tron (TRX) API by Ad4m2017
-    Contact me: https://t.me/Ad4m2017
+    Tron (TRX) API PHP by Ad4m2017
+    Contact: https://t.me/Ad4m2017
 */
 
 $api_url = 'https://api.tronscan.org/api';
